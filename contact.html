@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>Holiday planner</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="destination.html">Destination</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Book Your Trip</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder=" Your Name">
+    <input type="email" id="email" placeholder=" Your Email">
+
+    <select id="destination">
+      <option value="">Select Destination</option>
+      <option>Goa</option>
+      <option>Manali</option>
+          <option>Jaipur</option>
+          <option>Kashmir</option>
+          <option>Agra</option>
+          <option>Udaipur</option>
+      
+    </select>
+
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>Booking Successful 🎉</h3>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<footer>© 2026 Holiday Planner</footer>
+
+</body>
+</html>
