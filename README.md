@@ -12,7 +12,8 @@ It allows users to explore destinations, view travel packages, and book trips th
 📞 Contact page with form validation and popup
 🖼️ Image slider (carousel)
 📱 Fully responsive design (mobile, tablet, desktop)
-🛠️ Technologies Used
+
+Technologies Used
 HTML5
 CSS3 (Flexbox + Media Queries)
 JavaScript (Form Validation + Slider)
