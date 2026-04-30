@@ -1,0 +1,259 @@
+/* RESET + BASE */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0077b6;
+    color:white;
+    padding:15px 30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:url("../images/Travel.jpeg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+/* ABOUT HERO */
+.about-hero{
+    height:50vh;
+    background:url("../images/Travel.jpeg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.about-hero h1{
+    font-size:36px;
+}
+
+/* BUTTON */
+.btn{
+    background:orange;
+    padding:10px 20px;
+    color:white;
+    text-decoration:none;
+    margin-top:15px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+/* CONTAINER */
+.container{
+    flex:1;
+    padding:20px;
+    text-align:center;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:30%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* BOOK BUTTON */
+.book-btn{
+    display:inline-block;
+    margin-top:10px;
+    background:#0077b6;
+    color:white;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:14px;
+}
+
+.book-btn:hover{
+    background:#023e8a;
+}
+
+/* FORM */
+.container form{
+    max-width:350px;
+    margin:40px auto;
+    padding:30px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container form input,
+.container form textarea,
+.container form select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.container form button{
+    width:100%;
+    padding:12px;
+    background:#0077b6;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.container form button:hover{
+    background:#023e8a;
+}
+
+/* POPUP */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-content{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media(max-width:1024px){
+    .card{
+        width:45%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    .about-hero{
+        height:40vh;
+    }
+
+    .about-hero h1{
+        font-size:24px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    body{
+        font-size:14px;
+    }
+}
