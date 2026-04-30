@@ -42,7 +42,7 @@ nav a:hover{
 /* HERO */
 .hero{
     height:90vh;
-    background:url("../images/Travel.jpeg") no-repeat center/cover;
+    background:url("Travel.jpeg") no-repeat center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -58,7 +58,7 @@ nav a:hover{
 /* ABOUT HERO */
 .about-hero{
     height:50vh;
-    background:url("../images/Travel.jpeg") no-repeat center/cover;
+    background:url("Travel.jpeg") no-repeat center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
